@@ -1,0 +1,15 @@
+{
+    "devDependencies": {
+        "node-sass": "^4.13.0",
+        "pug": "^2.0.4",
+        "pug-plain-loader": "^1.0.0",
+        "sass-loader": "^8.0.0"
+    },
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "jquery": "^3.4.1",
+        "nuxt": "^2.10.2",
+        "serve": "^11.2.0",
+        "vue-compare-image": "^0.2.0"
+    }
+}

@@ -1,0 +1,16 @@
+div
+    //- h1 Принимаем #tetrischallenge!
+    article
+        section
+            div.tile#compare-image
+                v-compare-image.compare-image(
+                    leftImage="/left.jpg"
+                    rightImage="right.jpg"
+                    :sliderPositionPercentage="0.75"
+                )
+            div.tile#happy-new-year
+                img(src="/happy-new-year.jpg")
+        section
+            div.tile
+                blockrain
+            

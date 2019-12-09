@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600')
+
+$section-size: 90vw
+$section-min-size: 400px
+
+*
+    font-family: inherit
+    font-weight: inherit
+
+body
+    font-family: 'Open Sans', system-ui
+    font-weight: lighter
+
+h1
+    font-size: 3rem
+    text-align: center
+
+article
+    // margin: 1rem
+
+section
+    display: flex
+    flex-flow: column
+    justify-content: center
+
+.tile
+    position: relative
+    border-radius: $section-size / 10
+    overflow: hidden
+    width: $section-size
+    max-width: 600px
+    margin: (100vw-$section-size)/2
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .25)
+
+    &#compare-image
+        height: $section-size
+        max-height: 600px
+    
+    &#happy-new-year img
+        width: 100%
+    
+    &#game
+        height: 90vh
+
+.compare-image
+    min-width: 100%
+    min-height: 100%
+
+    &.shadow-left .left-image
+        filter: opacity(.5)
+
+    &.shadow-right .right-image
+        filter: opacity(.5)
+
+        

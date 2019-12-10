@@ -69,7 +69,7 @@
     }
 </script>
 
-<style lang="css" src="~/assets/blockrain.css"></style>
+<style lang="css" src="~/assets/blockrain/blockrain.css"></style>
 <style lang="sass" scoped>
     .blockrain-touch
 

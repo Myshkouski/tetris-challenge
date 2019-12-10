@@ -55,6 +55,7 @@
                 this.launched = true
             },
             onGameOver(score) {
+                this.launched = false
                 this.$emit('update:score', score)
             },
             onLine(lines, scoreIncrement, score) {
@@ -87,10 +88,15 @@
         height: 640px
         max-height: 100%
     
-    @media screen and (max-width: 499)
-        #game
-            width: 240px
-            height: 320px
+    @media screen and (max-width: 499px)
+        .game
+            width: 324px
+            height: 432px
+    
+    @media screen and (max-width: 399px)
+        .game
+            width: 262px
+            height: 352px
 
     .tetris-icon
         position: absolute
@@ -108,6 +114,15 @@
     .blockrain-start-holder
     .blockrain-game-over-holder, .blockrain-start-holder
         background-color: transparent
+    
+    .blockrain-btn, .blockrain-game-over-btn, .blockrain-start-btn
+        border-radius: 1rem
+        cursor: pointer
+        font-size: inherit
+
+        &::before, &::after
+            border: none
+
 
     #close-icon
         left: 2rem

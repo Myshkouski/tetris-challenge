@@ -15,6 +15,6 @@ export default {
     },
 
     router: {
-        base: '/tetris-challenge/'
+        base: process.env.NODE_ENV =='production' ? '/tetris-challenge/' : '/'
     }
 }

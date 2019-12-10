@@ -1,11 +1,14 @@
 div
-    //- h1 Принимаем #tetrischallenge!
     article
         section
+            div.text.center
+                h2 Принимаем #tetrischallenge!
             div.tile#compare-image
                 v-compare-image.compare-image(
-                    leftImage="left.jpg"
-                    rightImage="right.jpg"
+                    leftImage="right.jpg"
+                    rightImage="left.jpg"
+                    leftLabel="ожидание"
+                    rightLabel="реальность"
                     :sliderPositionPercentage="0.75"
                 )
             div.tile#happy-new-year
@@ -15,7 +18,8 @@ div
                 blockrain(
                     @update:score="onScore"
                 )
-            p Результат - {{ score }}
-            a(:href="mailTo")
-                span Поделиться
-            
+            div.text.center
+                h3 Результат - {{ score }}
+                a.btn(:href="mailTo")
+                    span Поделиться
+                

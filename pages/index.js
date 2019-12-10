@@ -17,7 +17,7 @@ export default {
 
     computed: {
         mailTo() {
-            return `mailto://${this.email}?` + encodeURI(`subject=${this.subject}&body=У меня целых ${this.score} баллов!`)
+            return `mailto:${this.email}?` + encodeURI(`subject=${this.subject}&body=У меня целых ${this.score} баллов!`)
         }
     },
 

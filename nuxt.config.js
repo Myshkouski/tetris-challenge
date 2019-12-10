@@ -8,7 +8,6 @@ export default {
         // cache: true,
         // optimizeCSS: true,
         extractCSS: true,
-        publicPath: 'assets',
         extend(config) {
             const ext = '.vue'
             const {
@@ -26,5 +25,9 @@ export default {
 
     generate: {
         dir: 'docs'
+    },
+
+    router: {
+        base: '/tetris-challenge/'
     }
 }

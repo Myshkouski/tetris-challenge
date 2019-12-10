@@ -11,5 +11,11 @@ export default {
         return {
             // percentage: 0.95
         }
+    },
+
+    methods: {
+        onScore(score) {
+            console.log(score)
+        }
     }
 }

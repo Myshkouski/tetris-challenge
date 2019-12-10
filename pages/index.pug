@@ -5,12 +5,14 @@ div
             div.tile#compare-image
                 v-compare-image.compare-image(
                     leftImage="/left.jpg"
-                    rightImage="right.jpg"
+                    rightImage="/right.jpg"
                     :sliderPositionPercentage="0.75"
                 )
             div.tile#happy-new-year
-                img(src="/happy-new-year.jpg")
+                img(src="/2020.png")
         section
-            div.tile
-                blockrain
+            div.tile#game
+                blockrain(
+                    @update:score="onScore"
+                )
             

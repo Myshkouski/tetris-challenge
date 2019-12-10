@@ -16,6 +16,9 @@ h1
     text-align: center
 
 article
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
     // margin: 1rem
 
 section
@@ -25,22 +28,22 @@ section
 
 .tile
     position: relative
-    border-radius: $section-size / 10
+    border-radius: 2rem
     overflow: hidden
     width: $section-size
-    max-width: 600px
+    max-width: 500px
     margin: (100vw-$section-size)/2
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, .25)
 
     &#compare-image
         height: $section-size
-        max-height: 600px
+        max-height: 500px
     
     &#happy-new-year img
         width: 100%
     
     &#game
-        height: 90vh
+        background: rgba(0, 0, 0, .8)
 
 .compare-image
     min-width: 100%

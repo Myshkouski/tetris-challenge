@@ -14,7 +14,6 @@
 <script>
     export default {
         data() {
-            console.log(Math.round(Math.sqrt(window.innerWidth * window.innerHeight) / 24))
             return {
                 blockrainOptions: {
                     playButtonText: 'Играть',

@@ -2,17 +2,20 @@ div
     article
         section
             div.text.center
-                h2 Принимаем #tetrischallenge!
-            div.tile#compare-image
-                v-compare-image.compare-image(
-                    leftImage="right.jpg"
-                    rightImage="left.jpg"
-                    leftLabel="ожидание"
-                    rightLabel="реальность"
-                    :sliderPositionPercentage="0.75"
-                )
-            div.tile#happy-new-year
-                img(src="~/assets/2020.png")
+                h3 Рабочий день в ДИТ...
+            div.tile
+                div.text.center#flex-text
+                    span ожидание
+                    span vs.
+                    span реальность
+                div#compare-image
+                    v-compare-image.compare-image(
+                        leftImage="right.jpg"
+                        rightImage="left.jpg"
+                        :sliderPositionPercentage="0.5"
+                        :sliderLineWidth="4"
+                        hover
+                    )
         section
             div.tile#game
                 blockrain(
@@ -22,4 +25,6 @@ div
                 h3 Результат - {{ score }}
                 a.btn(:href="mailTo")
                     span Поделиться
+            div.tile#happy-new-year
+                img(src="~/assets/2020.png")
                 

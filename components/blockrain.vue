@@ -17,7 +17,7 @@
             return {
                 blockrainOptions: {
                     playButtonText: 'Играть',
-                    playText: 'Броcаем ответный #tetrischallenge!',
+                    playText: '#tetrischallenge приняли, броcаем ответный!',
                     gameOverText: 'Игра окончена',
                     restartButtonText: 'Играть снова',
                     scoreText: 'Очки',
@@ -111,7 +111,14 @@
     .blockrain-game-start-holder, .blockrain-game-over-holder
         z-index: 999
     
-    .blockrain-start-holder
+    .blockrain-start-msg
+        font-size: 2rem
+
+    @media screen and (max-width: 350px)
+        .blockrain-start-msg
+            font-size: 1.5rem
+
+
     .blockrain-game-over-holder, .blockrain-start-holder
         background-color: transparent
     

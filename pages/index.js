@@ -9,13 +9,21 @@ export default {
 
     data() {
         return {
-            // percentage: 0.95
+            score: 0,
+            email: 'kalmykov@bgpb.by',
+            subject: '#tetris-challange'
+        }
+    },
+
+    computed: {
+        mailTo() {
+            return `mailto://${this.email}?` + encodeURI(`subject=${this.subject}&body=У меня целых ${this.score} баллов!`)
         }
     },
 
     methods: {
         onScore(score) {
-            console.log(score)
+            this.score = score
         }
     }
 }

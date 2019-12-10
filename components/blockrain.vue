@@ -107,6 +107,8 @@
         z-index: 999
     
     .blockrain-start-holder
+    .blockrain-game-over-holder, .blockrain-start-holder
+        background-color: transparent
 
     #close-icon
         left: 2rem

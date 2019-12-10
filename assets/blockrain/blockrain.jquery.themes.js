@@ -77,7 +77,7 @@ window.BlockrainThemes = {
   'custom': {
     background: 'transparent',
     primary: '#ff7b00',
-    secondary: '#fff'
+    secondary: '#000'
   },
   'gameboy': {
     background: '#C4CFA1',

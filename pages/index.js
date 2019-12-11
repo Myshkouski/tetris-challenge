@@ -2,6 +2,10 @@ import VueCompareImage from 'vue-compare-image'
 import Blockrain from '~/components/blockrain'
 
 export default {
+    head: {
+        title: '#tetrischallenge'
+    },
+
     components: {
         'v-compare-image': VueCompareImage,
         'blockrain': Blockrain

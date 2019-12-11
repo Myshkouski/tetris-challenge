@@ -30,12 +30,14 @@ section
     margin: (100vw-$section-size)/2
     margin-bottom: 1rem
 
-.tile, .text
-    overflow: hidden
-    width: $section-size
-    max-width: 500px
-    margin-bottom: 2rem
+    div:last-child
+        margin-bottom: 0
 
+    .tile, .text
+        overflow: hidden
+        width: $section-size
+        max-width: 500px
+        margin-bottom: 2rem
 .text
     &.center
         text-align: center
@@ -60,7 +62,12 @@ a
         width: 100%
     
     &#game
+        transition: box-shadow .5s ease
         background: rgba(0, 0, 0, .75)
+        margin-top: 1rem
+
+        &.active
+            box-shadow: 0 0 10px 10px rgba(245, 126, 0, .75)
     
 .btn
     position: relative

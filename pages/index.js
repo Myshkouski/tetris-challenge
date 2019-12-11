@@ -15,7 +15,8 @@ export default {
         return {
             score: 0,
             email: 'kalmykov@bgpb.by',
-            subject: '#tetris-challange'
+            subject: '#tetris-challange',
+            launched: false
         }
     },
 

@@ -13,6 +13,15 @@
 
 <script>
     export default {
+        model: {
+            prop: 'launched',
+            event: 'update:launched'
+        },
+
+        props: {
+            launched: Boolean
+        },
+
         data() {
             return {
                 blockrainOptions: {
@@ -29,7 +38,6 @@
                     onGameOver: this.onGameOver
                 },
 
-                launched: false,
                 game: null
             }
         },
@@ -42,27 +50,27 @@
             const $game = $(this.$refs.game)
             this.game = $game
 
-
             $game.blockrain(this.blockrainOptions)
             $game.blockrain('theme', 'custom')
         },
 
         methods: {
             onStart() {
-                this.launched = true
+                this.$emit('update:launched', true)
             },
             onRestart() {
-                this.launched = true
+                this.$emit('update:launched', true)
             },
             onGameOver(score) {
-                this.launched = false
+                this.$emit('update:launched', false)
+
                 this.$emit('update:score', score)
             },
             onLine(lines, scoreIncrement, score) {
                 this.$emit('update:score', score)
             },
             stop() {
-                this.launched = false
+                this.$emit('update:launched', false)
                 this.game.blockrain('gameover')
                 this.$emit('update:score', this.game.blockrain('score'))
             }

@@ -17,9 +17,12 @@ div
                         hover
                     )
         section
-            div.tile#game
+            div.tile#game(
+                :class="{ active: launched }"
+            )
                 blockrain(
                     @update:score="onScore"
+                    v-model="launched"
                 )
             div.text.center
                 h3 Результат - {{ score }}

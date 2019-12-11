@@ -113,11 +113,12 @@
     
     .blockrain-start-msg
         font-size: 2rem
+        line-height: 2rem
 
     @media screen and (max-width: 350px)
         .blockrain-start-msg
             font-size: 1.5rem
-
+            line-height: 1.5rem
 
     .blockrain-game-over-holder, .blockrain-start-holder
         background-color: transparent

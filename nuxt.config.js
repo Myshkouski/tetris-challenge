@@ -28,7 +28,8 @@ export default {
         description: 'Челлендж принят!',
         display: 'fullscreen',
         viewport: 'width=device-width, initial-scale=1, user-scalable=no',
-        start_url: '/'
+        start_url: '/',
+        image: 'qr-code.png'
     },
 
     pwa: {

@@ -8,7 +8,7 @@
     "dependencies": {
         "blockrain": "^0.2.0",
         "dotenv": "^8.2.0",
-        "jquery": "^1.11.3",
+        "jquery": "^3.4.1",
         "nuxt": "^2.10.2",
         "serve": "^11.2.0",
         "vue-compare-image": "^0.2.0"

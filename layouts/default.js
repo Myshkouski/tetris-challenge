@@ -6,7 +6,10 @@ export default {
             { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=0' },
         ],
         link: [
-            { rel: 'icon', type: 'image/png', href: 'favicon.png' }
+            { rel: 'icon', type: 'image/png', href: 'favicon.png' },
+        ],
+        script: [
+            { src: 'metrika.js' }
         ]
     }
 }
